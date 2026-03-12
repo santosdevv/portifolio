@@ -1,0 +1,61 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  background: var(--bg-surface);
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s var(--spring-snappy), transform 0.3s var(--spring-bounce);
+}
+
+.skill-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.skill-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.skill-card__category {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+/* Tags de proficiência */
+.skill-tag {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.skill-tag--advanced {
+  background-color: var(--accent-light);
+  color: var(--accent-hover);
+}
+
+.skill-tag--intermediate {
+  background-color: hsl(150, 40%, 92%);
+  color: hsl(150, 50%, 30%);
+}
+
+.skill-tag--basic {
+  background-color: hsl(40, 60%, 92%);
+  color: hsl(40, 60%, 35%);
+}
